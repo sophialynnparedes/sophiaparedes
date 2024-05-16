@@ -1,5 +1,3 @@
-import "../styles/Row.css";
-
 const Row = (props) => {
   return (
     <div className="row" id={props.align}>

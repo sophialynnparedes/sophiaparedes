@@ -1,5 +1,3 @@
-import "../styles/Col.css";
-
 const Col = (props) => {
   return (
     <div

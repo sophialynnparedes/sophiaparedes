@@ -1,4 +1,4 @@
-import "./styles/Main.css";
+import "./styles/Main.scss";
 import PageRouter from "./components/PageRouter";
 import Navbar from "./components/Navbar";
 

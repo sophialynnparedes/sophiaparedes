@@ -1,5 +1,3 @@
-import "../styles/Button.css";
-import "../styles/ImageButton.css";
 import { Link } from "wouter";
 
 export default function Button(props) {
