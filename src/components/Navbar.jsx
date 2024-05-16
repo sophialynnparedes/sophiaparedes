@@ -31,14 +31,6 @@ export default function Navbar() {
         }}
         href="/projects"
       />
-      <Button
-        label="Tutorials"
-        selected={selected == 4}
-        method={() => {
-          setSelected(4);
-        }}
-        href="/tutorials"
-      />
     </div>
   );
 }
