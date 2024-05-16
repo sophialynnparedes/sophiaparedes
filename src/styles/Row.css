@@ -1,0 +1,24 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#spaced.row {
+    justify-content: space-around;
+}
+
+#left.row {
+    justify-content: start;
+}
+
+#center.row {
+    justify-content: center;
+}
+
+#right.row {
+    justify-content: end;
+}

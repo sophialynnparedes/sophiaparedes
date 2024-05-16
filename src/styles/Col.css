@@ -1,0 +1,20 @@
+.col {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+
+
+#left.col {
+    align-items: start;
+}
+
+#right.col {
+    align-items: end;
+}
+
+#reverse.col {
+    flex-direction: column-reverse;
+    justify-content: start;
+}

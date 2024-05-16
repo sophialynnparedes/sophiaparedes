@@ -1,0 +1,59 @@
+:root{
+    --font1: "Helvetica", sans-serif;
+    --font2: "Impact", sans-serif;
+    --font3: "Bradley Hand", cursive;
+    --black: #2A1b3D;
+    --darkpurple: #721ac0;
+    --purple: #9b29ff;
+    --pink: #ee72fc;
+    --grey: #A4B3B6;
+    --hotpink: #D83F87;
+
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    min-height: calc(100vh - 40px);
+    background-image: linear-gradient(to bottom right, var(--purple), var(--pink));
+    background-size: cover;
+    background-repeat:no-repeat;
+    padding-bottom: 40px;
+}
+
+body *{
+    padding: 0;
+    margin: 0px;
+}
+
+
+
+p{
+    font-family: var(--font1);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+ul{
+    text-align: left;
+    margin-left: 20px;
+    width: 100%;
+}
+
+ul ul{
+    margin-left: 40px;
+}
+
+li{
+    font-family: var(--font1);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+

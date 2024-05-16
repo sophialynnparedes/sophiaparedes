@@ -1,0 +1,16 @@
+.gameDiv {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    height: 590px !important;
+    margin: 50;
+    width: 100%;
+    overflow: hidden;
+}
+
+.gameIframe {
+    height: 620px !important;
+    width: 500px !important;
+    max-width: 100%;
+}

@@ -1,0 +1,10 @@
+.navbar {
+    width: 100%;
+    background-image: linear-gradient(to bottom right, var(--darkpurple), var(--purple));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0px 10px 0px;
+    box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}

@@ -1,0 +1,60 @@
+
+.imageButton{
+    width:80%;
+    aspect-ratio: 3/1;
+    position: relative;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 4px 1px rgba(0,0,0,0.5);
+    border: 0;
+    margin-bottom:10px;
+    cursor: pointer;
+    background-color: white;
+}
+
+#icon.imageButton{
+    aspect-ratio: 1/1;
+    width: 150px;
+}
+
+.blur{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    width: 100%;
+}
+
+.blur .imageButton:hover{
+    transform: scale(1.1, 1.1);
+    transition: linear 0.2s;
+    
+}
+
+.blur:hover > .imageButton:not(:hover){
+    filter: blur(10px);
+    transform: scale(0.9,0.9);
+    transition: linear 2s;
+}
+
+.imageButton img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.imageButton p{
+    position: absolute;
+    font-family: var(--font2);
+    font-size: 36px;
+    color: white;
+    text-shadow: 4px 4px rgba(0,0,0,0.5);
+}
+
+.imageButton:active {
+    box-shadow: 0px 0px black;
+    transition: linear 0.05s;
+}
