@@ -1,7 +1,8 @@
+import HomeBackground from "../canvas/HomeBackground";
 export default function Home() {
   return (
     <>
-      <div className="background"></div>
+      <HomeBackground />
     </>
   );
 }
