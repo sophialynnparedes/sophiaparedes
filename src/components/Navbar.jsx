@@ -30,6 +30,14 @@ export default function Navbar() {
         }}
         href="/projects"
       />
+      <Button
+        label="Contact Me"
+        selected={selected == 3}
+        method={() => {
+          setSelected(3);
+        }}
+        href="/contact"
+      />
     </div>
   );
 }
