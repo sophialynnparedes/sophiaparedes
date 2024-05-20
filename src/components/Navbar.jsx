@@ -13,7 +13,7 @@ export default function Navbar() {
           method={() => {
             setSelected(4);
           }}
-          href="/"
+          href="/about"
         />
         <Button
           label="My Resume"
