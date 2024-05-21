@@ -52,7 +52,7 @@ body *{
 
 #fromBottom{
     position: absolute;
-    top: 100%;
+    bottom: -350px;
     left: 30%;
     animation: fromBottom 3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
     animation-delay: 1s;
@@ -60,20 +60,23 @@ body *{
 
 @keyframes fromBottom{
     0%{
-        top:100%;
+        bottom: -350px;
+        
     }
     50%{
-        top: 70%;
+        bottom: -50px;
+        
     }
     100%{
-        top: 100%
+        bottom: -350px;
+        
     }
 }
 
 #fromSide{
     position: absolute;
     top: 40%;
-    left: 100%;
+    right: -250px;
     animation: fromSide 3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
     animation-delay: 3s;
 }
@@ -81,15 +84,15 @@ body *{
 @keyframes fromSide{
     0%{
         transform: rotateZ(0deg);
-        left: 100%;
+        right: -250px;
     }
     50%{
         transform: rotateZ(-45deg);
-        left: 90%;
+        right: -50px;
     }
     100%{
         transform: rotateZ(0deg);
-        left: 100%;
+        right: -250px;
     }
 }
 
