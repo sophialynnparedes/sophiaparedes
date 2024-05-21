@@ -30,8 +30,8 @@ export default function HomeBackground(props) {
     <canvas
       className="background"
       ref={canvasRef}
-      width="900px"
-      height="900px"
+      width="3000px"
+      height="3000px"
     />
   );
 }

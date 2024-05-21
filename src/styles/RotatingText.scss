@@ -17,15 +17,15 @@
         font-family: $font2;
         color: $purple;
         text-shadow: 4px 4px 0px $black;
-        animation: animate 1s linear forwards;
-        animation-delay: 3s;
+        animation: animate 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+        animation-delay: 0.5s;
         transform: rotateX(90deg) translateY(-150px); 
     }
 
     @keyframes animate{
         0%{ transform: perspective(1000px) rotateX(90deg) translateY(-150px);}
         100%{transform:perspective(1000px) rotateX(0deg) translateY(0px);}
-        
     }
+
 }
 
