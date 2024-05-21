@@ -11,6 +11,7 @@ export default function Home() {
       <div className="animationContainer">
         <img className="me" id="fromBottom" src="Paredes.png" />
         <img className="me" id="fromSide" src="Paredes.png" />
+        <img className="me" id="introduction" src="Paredes.png" />
       </div>
     </>
   );

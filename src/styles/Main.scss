@@ -96,6 +96,26 @@ body *{
     }
 }
 
+#introduction{
+    position: absolute;
+    bottom: 10%;
+    left: -250px;
+    animation: introduction 1s cubic-bezier(0, 1.98, .99, .78) forwards;
+    animation-delay: 5s;
+}
+
+@keyframes introduction{
+    0%{
+        left: -250px;
+        bottom: 10%;
+    }
+    100%{
+        left: 250px;
+        bottom: 10%;
+    }
+}
+
+
 
 p{
     font-family: var(--font1);
