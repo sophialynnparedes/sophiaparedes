@@ -1,6 +1,6 @@
 
 $font1: "Helvetica", sans-serif;
-$font2: "Impact", sans-serif;
+$font2: "Press Start 2P", system-ui;
 $font3: "Bradley Hand", cursive;
 $black: #2A1b3D;
 $darkpurple: #721ac0;
@@ -39,6 +39,7 @@ body *{
     top: 0;
     left: 0;
     width: 100%;
+    z-index: -1;
     height: 100vh;
     overflow: hidden;
 }
@@ -64,7 +65,7 @@ body *{
         
     }
     50%{
-        bottom: -50px;
+        bottom: -100px;
         
     }
     100%{
@@ -98,24 +99,61 @@ body *{
 
 #introduction{
     position: absolute;
-    bottom: 10%;
-    left: -250px;
-    animation: introduction 1s cubic-bezier(0, 1.98, .99, .78) forwards;
+    transform: scale(2, 2);
+    top: 75%;
+    right: 100%;
+    animation: introduction 1s linear forwards;
     animation-delay: 5s;
 }
 
 @keyframes introduction{
     0%{
-        left: -250px;
-        bottom: 10%;
+        right: 100%;
     }
     100%{
-        left: 250px;
-        bottom: 10%;
+        right: 60%;
     }
 }
 
+.textBox{
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    top: 40%;
+    left: 50%;
+    border: 10px solid $black;
+    box-shadow: 4px 4px 6px 0px $black;
+    opacity: 0%;
+    animation: textBoxAppear 2s linear forwards;
+    animation-delay: 6s;
+    background-color: white;
+}
 
+.textBox:before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid $black;
+    border-top: 20px solid $black;
+    border-bottom: 20px solid transparent;
+    left: -40px;
+    bottom: -10px;
+    opacity: 0%;
+    animation: textBoxAppear 2s linear forwards;
+    animation-delay: 6s;
+}
+
+.textBox span{
+    font-family: $font3;
+    font-size: 28px;
+}
+
+@keyframes textBoxAppear{
+    0%{ opacity: 0%}
+    100%{opacity: 100%}
+}
 
 p{
     font-family: var(--font1);
