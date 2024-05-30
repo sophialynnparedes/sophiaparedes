@@ -4,6 +4,7 @@ import Row from "../components/Row";
 export default function Home() {
   return (
     <>
+      <div className="background"></div>
       <div className="nameContainer">
         <div>
           <span>Sophia Paredes</span>
