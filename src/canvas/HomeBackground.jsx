@@ -21,7 +21,7 @@ export default function HomeBackground(props) {
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
     ctx.fillStyle = "#000000";
     for (var i = 0; i < TileArray.length; i++) {
-      TileArray[i].update(frameCount - 100);
+      TileArray[i].update(frameCount - i / 1000 - 100);
     }
   };
 

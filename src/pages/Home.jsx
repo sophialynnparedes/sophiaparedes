@@ -5,6 +5,7 @@ export default function Home() {
   return (
     <>
       <div className="background"></div>
+      <HomeBackground />
       <div className="nameContainer">
         <div>
           <span>Sophia Paredes</span>
