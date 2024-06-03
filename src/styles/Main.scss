@@ -37,6 +37,19 @@ body *{
     
 }
 
+.game {
+    position: absolute;
+    z-index: -1;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 60px);
+}
+
+#player{
+    display: none;
+}
+
 .animationContainer{
     position: absolute;
     top: 0;
