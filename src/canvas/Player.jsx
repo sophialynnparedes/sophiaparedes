@@ -5,22 +5,22 @@ export function Player(c) {
   this.image = document.getElementById("player");
   this.draw = function () {
     c.beginPath();
-    c.fillStyle = "red";
+    c.fillStyle = "transparent";
     c.fillRect(this.x, this.y, 136, 296);
     c.drawImage(this.image, 45, 8, 136, 296, this.x, this.y, 136, 296);
   };
   this.update = function (frameCount, keys) {
     this.draw();
-    if (keys.includes("ArrowRight")) {
+    if (keys.includes("d")) {
       this.x += this.speed;
     }
-    if (keys.includes("ArrowLeft")) {
+    if (keys.includes("a")) {
       this.x -= this.speed;
     }
-    if (keys.includes("ArrowUp")) {
+    if (keys.includes("w")) {
       this.y -= this.speed;
     }
-    if (keys.includes("ArrowDown")) {
+    if (keys.includes("s")) {
       this.y += this.speed;
     }
   };

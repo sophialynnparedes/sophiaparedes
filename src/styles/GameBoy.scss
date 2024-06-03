@@ -1,0 +1,128 @@
+
+.GameBoyTop{
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 60px;
+    background-color: $purple;
+    border-radius: 12px;
+
+}
+
+.GameBoyBottom {
+    position: absolute;
+    top: calc(150px + 60px + 400px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 400px;
+    background-color: $purple;
+    border-radius: 12px;
+
+}
+
+.GameBoyLeft{
+    position: absolute;
+    top: 150px;
+    left: calc(50% - 250px);
+    width: 60px;
+    height: calc(30px + 230px + 400px);
+    background-color: $purple;
+    border-radius: 12px;
+    border: none;
+}
+
+.GameBoyRight{
+    position: absolute;
+    top: 150px;
+    right: calc(50% - 250px);
+    width: 60px;
+    height: calc(30px + 230px + 400px);
+    background-color: $purple;
+    border-radius: 12px;
+}
+
+.shadow{
+    position: absolute;
+    top: 120px;
+    width: 500px;
+    height: 690px;
+    left: calc(50% - 250px);
+    border-radius: 12px;
+    box-shadow: 4px 4px 4px 0px $black, -1px -1px 4px 0px $black;
+}
+
+.GameBoyButton{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 2px solid $black;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px $black;
+    font-family: $font1;
+    font-size: 30px;
+    color: grey;
+    text-shadow: -1px -2px $black;
+    background-image: radial-gradient(grey, black)
+}
+
+.GameBoyButton:active{
+    box-shadow: 0px 0px 0px $black;
+    transition: 0.2s;
+}
+
+.GameBoyButton#B{
+    top: 600px;
+    left: calc(50% + 30px);
+}
+
+.GameBoyButton#A{
+    top: 560px;
+    left: calc(50% + 110px);
+}
+
+.DirectionalButton{
+    position: absolute;
+    border: 2px solid $black;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 4px 4px 4px $black;
+    font-family: $font1;
+    font-size: 30px;
+    color: grey;
+    text-shadow: -1px -2px $black;
+    background-image: radial-gradient(grey, black)
+}
+
+.DirectionalButton:active{
+    box-shadow: 0px 0px 0px 0px black;
+    transition: 0.2s;
+}
+
+.DirectionalButton#Up{
+    top: 555px;
+    left: calc(50% - 145px);
+    padding: 10px 10px 10px 10px;
+}
+.DirectionalButton#Down{
+    top: 645px;
+    left: calc(50% - 145px);
+    padding: 10px 10px 10px 10px;
+}
+
+.DirectionalButton#Left{
+    top: 605px;
+    left: calc(50% - 200px);
+    padding: 2px 10px 2px 10px;
+}
+.DirectionalButton#Right{
+    top: 605px;
+    left: calc(50% - 100px);
+    padding: 2px 10px 2px 10px;
+}
+
+
+

@@ -24,7 +24,7 @@ body *{
 
 
 .background{
-    position: absolute;
+    position: fixed;
     z-index: -1;
     top: 60px;
     left: 0;
@@ -36,14 +36,20 @@ body *{
     background-repeat: no-repeat;
     
 }
+.background#desk{
+    background-image: url("public/desk.png");
+}
 
 .game {
     position: absolute;
-    z-index: -1;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    height: calc(100vh - 60px);
+    top: calc(150px + 30px);
+    left: 50%;
+    transform: translate(-50%, 0%);
+    height: 230px;
+    width: 380px;
+    box-shadow: inset 4px 4px 4px 0px $black, inset -1px -1px 4px 0px $black;
+    
+    background-color: $grey;
 }
 
 #player{
@@ -138,6 +144,7 @@ body *{
     top: 40%;
     left: 50%;
     border: 10px solid $black;
+    border-radius: 12px;
     box-shadow: 4px 4px 6px 0px $black;
     opacity: 0%;
     animation: textBoxAppear 2s linear forwards;
@@ -202,6 +209,7 @@ li{
 @import "src/styles/Navbar";
 @import "src/styles/Row";
 @import "src/styles/RotatingText";
+@import "src/styles/GameBoy";
 
 
 

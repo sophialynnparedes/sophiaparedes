@@ -4,11 +4,9 @@ import { Player } from "./Player";
 export default function AboutMeGame() {
   var keys = [];
   window.addEventListener("keydown", (e) => {
+    console.log(e.key);
     if (
-      (e.key === "ArrowDown" ||
-        e.key === "ArrowUp" ||
-        e.key === "ArrowLeft" ||
-        e.key === "ArrowRight") &&
+      (e.key === "w" || e.key === "a" || e.key === "s" || e.key === "d") &&
       keys.indexOf(e.key) === -1
     ) {
       keys.push(e.key);
@@ -16,12 +14,7 @@ export default function AboutMeGame() {
     }
   });
   window.addEventListener("keyup", (e) => {
-    if (
-      e.key === "ArrowDown" ||
-      e.key === "ArrowUp" ||
-      e.key === "ArrowLeft" ||
-      e.key === "ArrowRight"
-    ) {
+    if (e.key === "w" || e.key === "a" || e.key === "s" || e.key === "d") {
       keys.splice(keys.indexOf(e.key), 1);
     }
   });
@@ -42,7 +35,7 @@ export default function AboutMeGame() {
 
   return (
     <>
-      <canvas className="game" ref={canvasRef} width="3000px" height="3000px" />
+      <canvas className="game" ref={canvasRef} width="1520px" height="920px" />
       <img id="player" src="Paredes.png" />
     </>
   );
