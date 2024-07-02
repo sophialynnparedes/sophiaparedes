@@ -35,7 +35,7 @@ export default function Home() {
       </div>
       <div className="textBox">
         <span>
-          Hi! I'm Soph!
+          Hi! I'm Sophia!
           <br />
           <br /> Welcome to my personal webpage!
           <br />
