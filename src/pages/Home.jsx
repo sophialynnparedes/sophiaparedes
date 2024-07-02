@@ -1,11 +1,67 @@
-import HomeBackground from "../canvas/HomeBackground";
 import Row from "../components/Row";
 
 export default function Home() {
   return (
     <>
-      <div className="background"></div>
-      <HomeBackground />
+      <div className="background" id="home">
+      <div id="stem6"></div>
+      <div id="leaf6"></div>
+      <div className="petal" id="petal6"></div>
+<div className="petal" id="petal6"></div>
+<div className="petal" id="petal6"></div>
+<div className="petal" id="petal6"></div>
+<div className="petal" id="petal6"></div>
+<div className="petal" id="petal6"></div>
+
+      <div id="center6"></div>
+        <div id="stem1"></div>
+        <div id="stem2"></div>
+        <div id="stem3"></div>
+        <div id="stem4"></div>
+        <div id="stem5"></div>
+        <div id="leaf1"></div>
+        <div id="leaf2"></div>
+        <div id="leaf3"></div>
+        <div id="leaf4"></div>
+        <div id="leaf5"></div>
+        <div className="petal" id="petal2"></div>
+        <div className="petal" id="petal2"></div>
+<div className="petal" id="petal2"></div>
+<div className="petal" id="petal2"></div>
+<div className="petal" id="petal2"></div>
+<div className="petal" id="petal2"></div>
+        <div id="center2"></div>
+<div className="petal" id="petal3"></div>
+<div className="petal" id="petal3"></div>
+<div className="petal" id="petal3"></div>
+<div className="petal" id="petal3"></div>
+<div className="petal" id="petal3"></div>
+<div className="petal" id="petal3"></div>
+        <div id="center3"></div>
+        <div className="petal" id="petal1"></div>
+        <div className="petal" id="petal1"></div>
+        <div className="petal" id="petal1"></div>
+        <div className="petal" id="petal1"></div>
+        <div className="petal" id="petal1"></div>
+        <div className="petal" id="petal1"></div>
+        <div id="center1"></div>
+<div className="petal" id="petal5"></div>
+<div className="petal" id="petal5"></div>
+<div className="petal" id="petal5"></div>
+<div className="petal" id="petal5"></div>
+<div className="petal" id="petal5"></div>
+        <div className="petal" id="petal5"></div>
+        <div id="center5"></div>
+        <div className="petal" id="petal4"></div>
+        <div className="petal" id="petal4"></div>
+<div className="petal" id="petal4"></div>
+<div className="petal" id="petal4"></div>
+<div className="petal" id="petal4"></div>
+<div className="petal" id="petal4"></div>
+        <div id="center4"></div>
+
+
+      </div> 
       <div className="nameContainer">
         <div>
           <span>Sophia Paredes</span>
@@ -28,21 +84,6 @@ export default function Home() {
           </div>
         </div>
       </Row>
-      <div className="animationContainer">
-        <img className="me" id="fromBottom" src="Paredes.png" />
-        <img className="me" id="fromSide" src="Paredes.png" />
-        <img className="me" id="introduction" src="Paredes.png" />
-      </div>
-      <div className="textBox">
-        <span>
-          Hi! I'm Sophia!
-          <br />
-          <br /> Welcome to my personal webpage!
-          <br />
-          <br />
-          Click the buttons above to see more!
-        </span>
-      </div>
     </>
   );
 }

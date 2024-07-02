@@ -1,0 +1,104 @@
+#fromBottom{
+    position: absolute;
+    bottom: -350px;
+    left: 30%;
+    animation: fromBottom 3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    animation-delay: 100000s;
+}
+
+@keyframes fromBottom{
+    0%{
+        bottom: -350px;
+        
+    }
+    50%{
+        bottom: -100px;
+        
+    }
+    100%{
+        bottom: -350px;
+        
+    }
+}
+
+#fromSide{
+    position: absolute;
+    top: 40%;
+    right: -250px;
+    animation: fromSide 3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    animation-delay: 30000s;
+}
+
+@keyframes fromSide{
+    0%{
+        transform: rotateZ(0deg);
+        right: -250px;
+    }
+    50%{
+        transform: rotateZ(-45deg);
+        right: -50px;
+    }
+    100%{
+        transform: rotateZ(0deg);
+        right: -250px;
+    }
+}
+
+#introduction{
+    position: absolute;
+    transform: scale(2, 2);
+    top: 75%;
+    right: 100%;
+    animation: introduction 1s linear forwards;
+    animation-delay: 15s;
+}
+
+@keyframes introduction{
+    0%{
+        right: 100%;
+    }
+    100%{
+        right: 60%;
+    }
+}
+
+.textBox{
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    top: 40%;
+    left: 50%;
+    border: 10px solid $black;
+    border-radius: 12px;
+    box-shadow: 4px 4px 6px 0px $black;
+    opacity: 0%;
+    animation: textBoxAppear 2s linear forwards;
+    animation-delay: 17s;
+    background-color: white;
+}
+
+.textBox:before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid $black;
+    border-top: 20px solid $black;
+    border-bottom: 20px solid transparent;
+    left: -40px;
+    bottom: -10px;
+    opacity: 0%;
+    animation: textBoxAppear 2s linear forwards;
+    animation-delay: 17s;
+}
+
+.textBox span{
+    font-family: $font3;
+    font-size: 28px;
+}
+
+@keyframes textBoxAppear{
+    0%{ opacity: 0%}
+    100%{opacity: 100%}
+}

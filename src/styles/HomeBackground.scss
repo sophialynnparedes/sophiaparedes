@@ -1,0 +1,590 @@
+
+.background#home{
+    background-image: linear-gradient(to top, rgb(2, 23, 2), black, black, black);
+
+    #stem1{
+        background-image: linear-gradient(to left, green, lime);
+        position: fixed;
+        left: calc(50% - 70px);
+        bottom: -10px;
+        transform: translateX(-50px);
+        transform: rotate(-15deg);
+        border-radius: 20px;
+        width: 10px;
+        box-shadow: 0px 0px 10px 5px rgba(0,255,0,0.5);   
+        animation: grow1 7s ease-in-out forwards;
+
+    }
+
+    #stem2{
+        background-image: linear-gradient(to right, green, lime);
+        position: fixed;
+        left: calc(50% + 60px);
+        bottom: -10px;
+        transform: translateX(-50px);
+        transform: rotate(15deg);
+        border-radius: 20px;
+        width: 8px;
+        box-shadow: 0px 0px 10px 5px rgba(0,255,0,0.5);   
+        animation: grow2 10s ease-in-out forwards;
+    }
+
+    #stem3{
+        background-image: linear-gradient(to left, green, lime);
+        position: fixed;
+        left: calc(50% - 40px);;
+        bottom: -10px;
+        transform: translateX(-50px);
+        transform: rotate(-5deg);
+        border-radius: 20px;
+        width: 11px;
+        box-shadow: 0px 0px 10px 5px rgba(0,255,0,0.5);   
+        animation: grow3 9s ease-in-out forwards;
+    }
+
+    #stem4{
+        background-image: linear-gradient(to right, green, lime);
+        position: fixed;
+        left: calc(50% + 35px);
+        bottom: -10px;
+        transform: translateX(-50px);
+        transform: rotate(5deg);
+        border-radius: 20px;
+        width: 12px;
+        box-shadow: 0px 0px 10px 5px rgba(0,255,0,0.5);   
+        animation: grow4 11s ease-in-out forwards;
+    }
+
+    #stem5{
+        background-image: linear-gradient(to right, green, lime);
+        position: fixed;
+        left: 50%;
+        bottom: -10px;
+        transform: translateX(-50px);
+        transform: rotate(2deg);
+        border-radius: 20px;
+        width: 9px;
+        box-shadow: 0px 0px 10px 5px rgba(0,255,0,0.5);   
+        animation: grow5 5s ease-in-out forwards;
+    }
+
+    #stem6{
+        background-image: linear-gradient(to left, green, lime);
+        position: fixed;
+        left: 50%;
+        bottom: -10px;
+        transform: translateX(-50px);
+        transform: rotate(-5deg);
+        border-radius: 20px;
+        width: 7px;
+        box-shadow: 0px 0px 10px 5px rgba(0,255,0,0.5);   
+        animation: grow6 3.5s ease-in-out forwards;
+    }
+
+    #leaf1{
+        background-image: linear-gradient(to bottom, lime, green);
+        position: fixed;
+        border-radius: 45% 20%;
+        box-shadow: 0px 0px 10px 5px rgba(0,255,0,0.5);   
+        animation: growLeaf1 2s ease-in-out forwards;
+        animation-delay: 7s;
+        bottom: -20px;
+        transform: rotate(45deg);
+    }
+
+    #leaf2{
+        background-image: linear-gradient(to right, lime, green);
+        position: fixed;
+        border-radius: 45% 20%;
+        box-shadow: 0px 0px 10px 5px rgba(0,255,0,0.5);   
+        animation: growLeaf2 1.5s ease-in-out forwards;
+        animation-delay: 10s;
+        bottom: -20px;
+        transform: rotate(20deg);
+        left: calc(50% + 65px);
+    }
+
+    #leaf3{
+        background-image: linear-gradient(to left, lime, green);
+        position: fixed;
+        border-radius: 45% 20%;
+        box-shadow: 0px 0px 10px 5px rgba(0,255,0,0.5);   
+        animation: growLeaf3 1.5s ease-in-out forwards;
+        animation-delay: 9s;
+        bottom: -20px;
+        transform: rotate(60deg);
+        left: calc(50% + 65px);
+    }
+
+    #leaf4{
+        background-image: linear-gradient(to left, lime, green);
+        position: fixed;
+        border-radius: 45% 20%;
+        box-shadow: 0px 0px 10px 5px rgba(0,255,0,0.5);   
+        animation: growLeaf4 1.5s ease-in-out forwards;
+        animation-delay: 11s;
+        bottom: -20px;
+        transform: rotate(60deg);
+        left: calc(50% + 65px);
+    }
+
+    #leaf5{
+        background-image: linear-gradient(to left, lime, green);
+        position: fixed;
+        border-radius: 45% 20%;
+        box-shadow: 0px 0px 10px 5px rgba(0,255,0,0.5);   
+        animation: growLeaf5 1.5s ease-in-out forwards;
+        animation-delay: 10s;
+        bottom: -20px;
+        transform: rotate(60deg);
+        left: calc(50% + 65px);
+    }
+
+    #leaf6{
+        background-image: linear-gradient(to left, lime, green);
+        position: fixed;
+        border-radius: 45% 20%;
+        box-shadow: 0px 0px 10px 5px rgba(0,255,0,0.5);   
+        animation: growLeaf6 1.5s ease-in-out forwards;
+        animation-delay: 3.5s;
+        bottom: -20px;
+        transform: rotate(30deg);
+        left: calc(50% + 0px);
+    }
+
+    #center1{
+        background-image: radial-gradient(yellow, orange);
+        position: fixed;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px 5px rgba(255, 180, 0, 0.5);
+        animation: growCenter1 1s ease-in-out forwards;
+        animation-delay: 7s;
+        width: 0px;
+        height: 0px;
+        bottom: -20px;
+    }
+    #center2{
+        background-image: radial-gradient(yellow, orange);
+        position: fixed;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px 5px rgba(255, 180, 0, 0.5);
+        animation: growCenter2 0.7s ease-in-out forwards;
+        animation-delay: 10s;
+        width: 0px;
+        height: 0px;
+        bottom: -20px;
+    }
+    #center3{
+        background-image: radial-gradient(yellow, orange);
+        position: fixed;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px 5px rgba(255, 180, 0, 0.5);
+        animation: growCenter3 1.2s ease-in-out forwards;
+        animation-delay: 9s;
+        width: 0px;
+        height: 0px;
+        bottom: -20px;
+    }
+    #center4{
+        background-image: radial-gradient(yellow, orange);
+        position: fixed;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px 5px rgba(255, 180, 0, 0.5);
+        animation: growCenter4 1.1s ease-in-out forwards;
+        animation-delay: 11s;
+        width: 0px;
+        height: 0px;
+        left: calc(50% + 120px);
+        bottom: -20px;
+    }
+    #center5{
+        background-image: radial-gradient(yellow, orange);
+        position: fixed;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px 5px rgba(255, 180, 0, 0.5);
+        animation: growCenter5 0.9s ease-in-out forwards;
+        animation-delay: 10s;
+        width: 0px;
+        height: 0px;
+        left: calc(50% + 120px);
+        bottom: -20px;
+    }
+    #center6{
+        background-image: radial-gradient(yellow, orange);
+        position: fixed;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px 5px rgba(255, 180, 0, 0.5);
+        animation: growCenter6 1.5s ease-in-out forwards;
+        animation-delay: 3.5s;
+        width: 0px;
+        height: 0px;
+        left: calc(50% + 120px);
+        bottom: -20px;
+    }
+
+    .petal{
+        background-image: linear-gradient(white, $pink);
+        position: fixed;
+        border-radius: 45% 20%;
+        bottom: -20px;
+        box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.5);
+        transform-origin: bottom left;
+    }
+
+    #petal1{
+        animation: growPetals1 0.1s ease-out forwards;
+        animation-delay: 9s;
+        left: calc(50% - 120px);
+    }
+
+    #petal2{
+        animation: growPetals2 0.1s ease-out forwards;
+        animation-delay: 13s;
+        left: calc(50% - 45px);
+    }
+
+    #petal3{
+        animation: growPetals3 0.1s ease-out forwards;
+        animation-delay: 11s;
+        left: calc(50% + 10px);
+    }
+    #petal4{
+        animation: growPetals4 0.1s ease-out forwards;
+        animation-delay: 12s;
+        left: calc(50% + 60px);
+    }
+    #petal5{
+        animation: growPetals5 0.1s ease-out forwards;
+        animation-delay: 10.5s;
+        left: calc(50% + 120px);
+    }
+    #petal6{
+        animation: growPetals6 0.1s ease-out forwards;
+        animation-delay: 5s;
+        left: calc(50% - 10px);
+    }
+
+    .petal:nth-child(6n + 2){
+        transform: rotate(60deg);
+    }
+    
+    .petal:nth-child(6n+3){
+        transform: rotate(120deg);
+    }
+    
+    .petal:nth-child(6n+4){
+        transform: rotate(180deg);
+    }
+
+    .petal:nth-child(6n+5){
+        transform: rotate(240deg);
+    }
+
+    .petal:nth-child(6n+6){
+        transform: rotate(300deg);
+    }
+}
+
+@keyframes grow1{
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 400px;
+    }
+}
+
+@keyframes grow2{
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 350px;
+    }
+}
+
+@keyframes grow3{
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 420px;
+    }
+}
+
+@keyframes grow4{
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 345px;
+    }
+}
+
+@keyframes grow5{
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 400px;
+    }
+}
+
+@keyframes grow6{
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 320px;
+    }
+}
+
+@keyframes growLeaf1{
+    0%{
+        height: 0px;
+        width: 0px;
+        left: calc(50% - 75px);
+        bottom: 200px
+    }
+    100%{
+        height: 50px;
+        width: 50px;
+        left: calc(50% - 130px);
+        bottom: 200px;
+    }
+}
+
+@keyframes growLeaf2{
+    0%{
+        height: 0px;
+        width: 0px;
+        bottom: 130px;
+    }
+    100%{
+        height: 45px;
+        width: 55px;
+        bottom: 130px;
+    }
+}
+
+@keyframes growLeaf3{
+    0%{
+        height: 0px;
+        width: 0px;
+        bottom: 300px;
+        left: calc(50% - 45px);
+    }
+    100%{
+        height: 35px;
+        width: 50px;
+        bottom: 300px;
+        left: calc(50% - 95px);
+    }
+}
+
+@keyframes growLeaf4{
+    0%{
+        height: 0px;
+        width: 0px;
+        bottom: 250px;
+        left: calc(50% + 50px);
+    }
+    100%{
+        height: 35px;
+        width: 65px;
+        bottom: 250px;
+        left: calc(50% - 10px);
+    }
+}
+
+@keyframes growLeaf5{
+    0%{
+        height: 0px;
+        width: 0px;
+        bottom: 90px;
+        left: calc(50% + 5px);
+    }
+    100%{
+        height: 35px;
+        width: 50px;
+        bottom: 90px;
+        left: calc(50% - 45px);
+    }
+}
+
+@keyframes growLeaf6{
+    0%{
+        height: 0px;
+        width: 0px;
+        bottom: 150px;
+    }
+    100%{
+        height: 35px;
+        width: 50px;
+        bottom: 150px;
+    }
+}
+
+@keyframes growCenter1{
+    0%{
+        height: 0px;
+        width: 0px;
+        bottom: 390px;
+        left: calc(50% - 120px);
+    }
+    100%{
+        height: 60px;
+        width: 60px;
+        bottom: 360px;
+        left: calc(50% - 150px);
+    }
+}
+
+@keyframes growCenter2{
+    0%{
+        height: 0px;
+        width: 0px;
+        bottom: 410px;
+        left: calc(50% - 50px);
+    }
+    100%{
+        height: 50px;
+        width: 50px;
+        bottom: 380px;
+        left: calc(50% - 75px);
+    }
+}
+
+@keyframes growCenter3{
+    0%{
+        height: 0px;
+        width: 0px;
+        bottom: 380px;
+        left: calc(50% + 10px);
+    }
+    100%{
+        height: 60px;
+        width: 60px;
+        bottom: 380px;
+        left: calc(50% - 20px);
+    }
+}
+
+@keyframes growCenter4{
+    0%{
+        height: 0px;
+        width: 0px;
+        bottom: 320px;
+        left: calc(50% + 60px);
+    }
+    100%{
+        height: 70px;
+        width: 70px;
+        bottom: 320px;
+        left: calc(50% + 25px);
+    }
+}
+
+@keyframes growCenter5{
+    0%{
+        height: 0px;
+        width: 0px;
+        bottom: 325px;
+        left: calc(50% + 110px);
+    }
+    100%{
+        height: 50px;
+        width: 50px;
+        bottom: 325px;
+        left: calc(50% + 90px);
+    }
+}
+
+@keyframes growCenter6{
+    0%{
+        height: 0px;
+        width: 0px;
+        bottom: 300px;
+        left: calc(50% - 10px);
+    }
+    100%{
+        height: 40px;
+        width: 40px;
+        bottom: 300px;
+        left: calc(50% - 30px);
+    }
+}
+
+@keyframes growPetals1{
+    0%{
+        width: 0px;
+        height: 0px;
+        bottom: 390px;
+    }
+    100%{
+        width: 60px;
+        height: 60px;
+        bottom: 390px;
+    }
+}
+
+@keyframes growPetals2{
+    0%{
+        width: 0px;
+        height: 0px;
+        bottom: 410px;
+    }
+    100%{
+        width: 60px;
+        height: 60px;
+        bottom: 410px;
+    }
+}
+@keyframes growPetals3{
+    0%{
+        width: 0px;
+        height: 0px;
+        bottom: 410px;
+    }
+    100%{
+        width: 60px;
+        height: 60px;
+        bottom: 410px;
+    }
+}
+@keyframes growPetals4{
+    0%{
+        width: 0px;
+        height: 0px;
+        bottom: 355px;
+    }
+    100%{
+        width: 60px;
+        height: 60px;
+        bottom: 355px;
+    }
+}
+@keyframes growPetals5{
+    0%{
+        width: 0px;
+        height: 0px;
+        bottom: 350px;
+    }
+    100%{
+        width: 60px;
+        height: 60px;
+        bottom: 350px;
+    }
+}
+@keyframes growPetals6{
+    0%{
+        width: 0px;
+        height: 0px;
+        bottom: 320px;
+    }
+    100%{
+        width: 60px;
+        height: 60px;
+        bottom: 320px;
+    }
+}
